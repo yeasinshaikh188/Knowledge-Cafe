@@ -1,4 +1,3 @@
-import { useState } from "react";
 
 
 const Blogs = () => {
@@ -10,8 +9,8 @@ const Blogs = () => {
     .then(res => res.json())
     .then(data => setBlogs(data))
     return (
-        <div>
-            
+        <div className="w-2/3">
+            <h1>Blogs : {Blogs.length} </h1>
         </div>
     );
 };
